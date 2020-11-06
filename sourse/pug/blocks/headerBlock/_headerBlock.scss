@@ -1,5 +1,10 @@
 // start .headerBlock
 .headerBlock {
+	position: relative;
+	background-color: #121c37;
+
+	
+	
 	margin-bottom: 1px;
 	min-height: 100vh;
 	min-height: calc(var(--vh, 1vh) * 100);
@@ -8,10 +13,51 @@
 
 	h1 {
 		margin-bottom: 1px;
+		font-weight: bold;
+		line-height: (52 / 40);
+		color: #ffffff;
 	}
 
 	h2 {
 		margin-bottom: 1px;
+	}
+
+	p{
+		font-size: 20px;
+		line-height: (24 / 20);
+		color: #37bfff;
+		width: 386px;
+	}
+
+	&__title{
+		font-size: 20px;
+		margin-bottom: 33px;
+	}
+
+	.green{
+		color: #86dc87;
+	}
+
+	&__form-dark{
+		position: relative;
+		// margin-right: auto;
+		// margin-left: auto;
+		padding: 35px 90px 21px 34px;
+		width: 563px;
+		z-index: 2;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 563px;
+			height: 100%;
+			box-shadow: 0 8px 21px rgba(84, 101, 136, 0.75);
+			background-color: #1c1e35;
+			opacity: 0.36;
+			border-radius: 20px;
+			z-index: -1;
+		}
 	}
 
 	@include media-breakpoint-up(xl) {}
@@ -53,3 +99,4 @@
 }
 
 // end.headerBlock
+

@@ -1,10 +1,14 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock.bg-wrap.section#headerBlock&attributes(attributes)
+		+pic('header', 'bg', '')(class="picture-bg")
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
+			+b.section-title
+				h1 Hit-Rate&gt; 90% <br> GINI generic модели от&nbsp;2,6 до&nbsp;8%
+			p Скоринг на&nbsp;основе анонимизированных поведенческих данных.
 
-			.row
+			+e.form-dark
+				+e.title.text-white #[span.green Бесплатное] ретро-тестирование*!
+				+form-h()
 						
 	// end headerBlock

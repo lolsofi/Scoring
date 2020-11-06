@@ -7,6 +7,7 @@
 			// @extend .form-control;
 		//  outline: 0 !important;
 		 resize: none;
+		 width: 190px;
  	}
  	&__btn{
  		cursor: pointer;
@@ -14,7 +15,22 @@
  	label{
  		width: 100%;
  		display: block;
- 	}
+	 }
+	 
+
+	&__text{
+		color: #8c95b1;
+		font-size: $small;
+		line-height: (16 / 14);
+	}
+
+	&__row{
+		--bs-gutter-x: 9px;
+	}
+
+	&__col{
+		margin-bottom: 23px;
+	}
 }
 
 

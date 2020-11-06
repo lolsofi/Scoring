@@ -1,7 +1,47 @@
-
 	// start .topLine
-	.topLine {
+.topLine {
+
+	--sPT: #{rem(32)};
+	--sPB: #{rem(31)};
+
+	// &__row{
+	// 	align-items: flex-end;
+	// }
+	.row{
+		align-items: center;
+	}
 		 
+	&__logo{
+		display: block;
+	}
+
+	&__col{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__link{
+		border-bottom: 1px solid #9195a6;
+		line-height: (52 / 16);
+		&:hover{
+			border-color: transparent;
+		}
+	}
+
+	&__tel{
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.color{
+		color: #d0152f;
+	}
+
+	&__btn{
+		@extend .btn;
+		width: 190px;
+	}
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

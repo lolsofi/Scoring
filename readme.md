@@ -1,1 +1,2 @@
-1. Отключил lazy плагин. Поставил  loading="lazy"
+<!--https://lolsofi.github.io/Scoring/-->
+1. <https://lolsofi.github.io/Scoring/public>

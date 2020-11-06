@@ -46,14 +46,14 @@
     "gulp-svgmin": "^2.2.0",
     "gulp-tabify": "0.0.2",
     "gulp-uglify": "^3.0.2",
-    "postcss": "^7.0.32",
+    "postcss": "^7.0.35",
     "postcss-nested": "^4.2.3"
   },
   "optionalDependencies": {},
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "animate.css": "^4.1.0",
-    "bootstrap": "^5.0.0-alpha1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.0.0-alpha2",
     "inputmask": "^5.0.5",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.5.1",

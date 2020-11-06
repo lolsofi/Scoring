@@ -2,8 +2,24 @@ mixin topLine()
 	// start topLine
 	+b.SECTION.topLine.section#topLine&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 topLine
-				
 			.row
+				.col-lg-3
+					+e.logo(href="/")
+						img(src="img/@2x/logo.png", alt="")
+				
+				+e.col.col
+						.row
+							.col-auto
+								+e.link.text-body(href="#") Как это работает
+
+							.col-auto
+								+e.link.text-body(href="#") Мой кредитный рейтинг
+								
+							.col-auto
+								+e.tel.text-body(href="tel:+78005050873") #[span.text-danger 8 800] 505 0873
+
+							.col-auto
+								+e.btn.btn.bg-success(href="#") Заказать звонок
+
+
 	// end topLine
