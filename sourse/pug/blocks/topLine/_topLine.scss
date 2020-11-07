@@ -29,7 +29,7 @@
 	}
 
 	&__tel{
-		font-size: 20px;
+		font-size: rem(20);
 		font-weight: bold;
 	}
 
@@ -39,7 +39,6 @@
 
 	&__btn{
 		@extend .btn;
-		width: 190px;
 	}
 
 	@include media-breakpoint-up(xl) {}

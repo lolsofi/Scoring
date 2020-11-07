@@ -79,10 +79,10 @@ mixin polite()
 
 mixin form-h()
 	+form-wrap()(class="form-wrap--horizontal")
-	
-		+e.row.row
-			+e.col.col-md-6
-				+input("",'tel')
-			+e.col.col-md-6
-				+e.btn.btn.btn-danger(href="#") Отправить заявку
+		+e.row-wrap
+			+e.row.row
+				+e.col.col-md-6
+					+input("",'tel')
+				+e.col.col-md-6
+					+e.btn.btn.btn-danger(href="#") Отправить заявку
 		+e.text *Объем заявок в рамках «бесплатного пилота» согласовывается персонально для каждого отдельного случая.

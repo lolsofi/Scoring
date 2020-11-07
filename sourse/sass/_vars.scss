@@ -64,7 +64,7 @@ $cyan: #17a2b8 !default;
 // // scss-docs-end colors-map
 
 $primary: #018cf1 !default;
-$secondary: #ee8528 !default;
+$secondary: #9ba3ba !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -217,7 +217,7 @@ $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width / 2 !default;
+$container-padding-x: $grid-gutter-width !default;
 
 
 // Components

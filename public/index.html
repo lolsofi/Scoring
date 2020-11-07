@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>title</title>
+		<title>SmartData</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
@@ -39,7 +39,7 @@
 								</div>
 								<div class="col-auto"><a class="topLine__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a>
 								</div>
-								<div class="col-auto"><a class="topLine__btn btn bg-success" href="#">Заказать звонок</a>
+								<div class="col-auto"><a class="topLine__btn btn btn-success" href="#">Заказать звонок</a>
 								</div>
 							</div>
 						</div>
@@ -72,13 +72,15 @@
 								<input class="utm_term" type="hidden" name="utm_term"/>
 								<input class="utm_medium" type="hidden" name="utm_medium"/>
 								<input class="utm_campaign" type="hidden" name="utm_campaign"/>
-								<div class="form-wrap__row row">
-									<div class="form-wrap__col col-md-6">
-										<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
+								<div class="form-wrap__row-wrap">
+									<div class="form-wrap__row row">
+										<div class="form-wrap__col col-md-6">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="" name="tel"/>
+											</div>
+											<!-- +e.input-wrap-->
 										</div>
-										<!-- +e.input-wrap-->
-									</div>
-									<div class="form-wrap__col col-md-6"><a class="form-wrap__btn btn btn-danger" href="#">Отправить заявку</a>
+										<div class="form-wrap__col col-md-6"><a class="form-wrap__btn btn btn-danger" href="#">Отправить заявку</a>
+										</div>
 									</div>
 								</div>
 								<div class="form-wrap__text">*Объем заявок в рамках «бесплатного пилота» согласовывается персонально для каждого отдельного случая.
@@ -89,26 +91,103 @@
 				</div>
 			</div>
 			<!-- end headerBlock-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
+			<!-- start sCards-->
+			<div class="sCards section" id="sCards">
+				<div class="container">
+					<div class="sCards__row row">
+						<div class="col">
+							<div class="sCards__item">
+								<div class="sCards__title">ScoringDATA
+								</div>
+								<div class="sCards__text">Сервис по обогащению данными. Внешнее обогащение данных о потенциальном заемщике.
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="sCards__item">
+								<div class="sCards__title">ScoringDATA+
+								</div>
+								<div class="sCards__text">Максимальная точность предсказания за счет внешнего обогащения данными по расширенным критериям.
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="sCards__item">
+								<div class="sCards__title">Альтернативный номер
+								</div>
+								<div class="sCards__text">Сервис* поиска альтернативных телефонных номеров используемых анализируемым субъектом.
+								</div>
+								<div class="sCards__dopText">*Может предоставляться как в Online, так и в Offline режиме.
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="sCards__item">
+								<div class="sCards__title">Работа по запросу
+								</div>
+								<div class="sCards__text">Индивидуальный подход к решению ваших целей и задач.
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="sCards__item">
+								<div class="sCards__title">Геоаналитика
+								</div>
+								<div class="sCards__text">
+								</div>
+								<svg class="icon icon-clock ">
+									<use xlink:href="img/svg/sprite.svg#clock"></use>
+								</svg>
+								<div class="sCards__dopText">В разработке...
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sCards-->
+			<!-- start sCredit-->
+			<section class="sCredit section" id="sCredit">
 				<div class="container">
 					<div class="section-title text-center">
-						<h2>sForm</h2>
+						<h2>Почему кредиторы теряют прибыль</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-5">
+							<!-- picture-->
+							<picture> 
+								<noscript class="loading-lazy">
+									<source srcset="img/@2x/webp/credit.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+									<source srcset="img/@1x/webp/credit.webp" loading="lazy" type="image/webp"/>
+									<source srcset="img/@2x/credit.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+									<source srcset="img/@1x/credit.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/credit.jpg" loading="lazy" alt=""/>
+								</noscript>
+							</picture>
+							<!-- /picture-->
+						</div>
+						<div class="col-lg-7">
+							<p>Современный рынок кредитования сталкивается с&nbsp;необходимостью повышения эффективности в&nbsp;работе кредитных учреждений. А&nbsp;также минимизации затрат, связанных с&nbsp;урегулированием разногласий между заемщиком и&nbsp;кредитором. <br> Упущенная прибыль становится ответом на&nbsp;один из&nbsp;двух вопросов:</p>
+							<ul>
+								<li>Соответствие кредитного предложения реальным потребностям клиента.</li>
+								<li>Сколько действующих заемщиков выполнят свои обязательства перед кредитором?</li>
+							</ul>
+						</div>
+						<div class="sCredit__text">Сервис &laquo;ScoringDATA&raquo; позволяет значительно сократить риски кредитора, благодаря поиску и&nbsp;аналитике внешних источников: реестры данных, социальные платформы, доски объявлений, банки резюме; а&nbsp;также собственные базы данных.
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sCredit-->
+			<!-- start sDifferences-->
+			<section class="sDifferences section" id="sDifferences">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Чем &laquo;SmartDATA&raquo; отличается отконкурентов</h2>
 					</div>
 					<div class="row"></div>
 				</div>
 			</section>
-			<!-- end sForm-->
-			<!-- start sContact-->
-			<section class="sContact section" id="sContact">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sContact</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end sContact-->
+			<!-- end sDifferences-->
 			<footer class="footer block-with-lazy">
 				<div class="container">
 					<h2>footer</h2>
