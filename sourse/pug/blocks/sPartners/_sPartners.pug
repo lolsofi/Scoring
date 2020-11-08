@@ -1,0 +1,24 @@
+mixin sPartners()
+	// start sPartners
+	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Сервисом пользуются
+			+e.row.row
+				mixin item(i)
+					+e.col.col-lg-3.col-md-4.col-sm-6
+						+e.img-wrap
+							img(src=`img/@2x/bank-${i}.jpg` load="lazy", alt="")
+
+				+item(1)
+				+item(2)
+				+item(3)
+				+item(4)
+				+item(5)
+				+item(6)
+
+
+
+
+
+	// end sPartners

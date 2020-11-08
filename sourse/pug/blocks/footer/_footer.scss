@@ -1,5 +1,28 @@
 .footer {
-		
+    
+  // --sPT: #{rem(59)};
+  // --sPB: #{rem(17)};
+
+  background-color: #f6f7fb;
+
+  &__col{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__logo{
+    display: block;
+    margin-right: 38px;
+  }
+  
+  &__tel{
+		font-size: rem(20);
+		font-weight: bold;
+  }
+  
+  &__btn{
+		@extend .btn;
+	}
 
 
 // 

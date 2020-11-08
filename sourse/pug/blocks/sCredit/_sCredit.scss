@@ -1,25 +1,67 @@
 	// start .sCredit
 .sCredit {
 	
+	--sPT: #{rem(10)};
+	@include media-breakpoint-up(lg){
+		--sPB: #{rem(235)};
+	}
+	--sPB: #{rem(54)};
+	// &__row{
+	// 	@include media-breakpoint-up(xl){
+	// 		// --bs-gutter-x: 0;
+
+	// 	}
+	// }
 	
-
-
 	picture{
 		display: block;
-		max-width: 486px;
+		max-width: rem(486);
+		@include media-breakpoint-up(lg){
+			margin-bottom: 0;
+		}
+		margin-bottom: rem(25);
+
 		img{
-			object-fit: cover;
 			border-radius: 30px;
 			width: 100%;
-			height: 100%;
+			height: auto;
+		}
+	}
+
+	p{
+		margin-bottom: rem(24);
+	}
+
+	ul{
+		margin-left: rem(15);
+		@include media-breakpoint-up(lg){
+			margin-bottom: 0;
+		}
+		margin-bottom: rem(30);
+		li{
+			margin-bottom: rem(25);
+			font-weight: bold;
 		}
 	}
 
 	&__text{
 		background-color: $warning;
 		color: $white;
-		padding: 48px 41px 50px 33px;
-		max-width: 566px;
+		max-width: rem(566);
+		@include media-breakpoint-up(xl){
+			margin-top: rem(-45);
+			margin-left: rem(215);
+		}
+		@include media-breakpoint-up(lg){
+			margin-top: 0;
+			margin-left: rem(215);
+			position: absolute;
+			z-index: 1;
+		}
+		@include media-breakpoint-up(sm){
+			padding: rem(44) rem(41) rem(47) rem(33);
+		}
+		padding: rem(29) rem(26);
 	}
 
 	@include media-breakpoint-up(xl) {}

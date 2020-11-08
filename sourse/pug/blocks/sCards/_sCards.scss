@@ -1,59 +1,25 @@
 	// start .sCards
 .sCards {
 		
-	--sPT: #{rem(45)};
-	--sPB: #{rem(49)};
+	--sPT: #{rem(54)};
+	@include media-breakpoint-up(lg){
+		--sPB: #{rem(40)};
+	}
+	--sPB: #{rem(24)};
 
-	.row{
-		--bs-gutter-x: 0;
+	&__row{
+		@include media-breakpoint-up(lg){
+			--bs-gutter-x: 0;
+		}
+		--bs-gutter-x: #{rem(25)};
+		justify-content: center;
 	}
 
-	&__row :nth-child(1) &__item{
-		&::before{
-			content: '';
-			top: 0;
-			@include a-cent(x);
-			@include triangle(rem(40) rem(20), $primary, down);
+	&__col{
+		@include media-breakpoint-up(lg){
+			margin-bottom: 0;
 		}
-	}
-	&__row :nth-child(2) &__item{
-		&::before{
-			content: '';
-			top: 0;
-			@include a-cent(x);
-			@include triangle(rem(40) rem(20), #6dae77, down);
-		}
-	}
-	&__row :nth-child(3) &__item{
-		.sCards__text{
-			margin-bottom: 1rem;
-		}
-		&::before{
-			content: '';
-			top: 0;
-			@include a-cent(x);
-			@include triangle(rem(40) rem(20), $warning, down);
-		}
-	}
-	&__row :nth-child(4) &__item{
-		&::before{
-			content: '';
-			top: 0;
-			@include a-cent(x);
-			@include triangle(rem(40) rem(20), #1d4996, down);
-		}
-	}
-	&__row :nth-child(5) &__item{
-		color: #baccd9;
-		.sCards__title{
-			color: #bacdda;
-		}
-		&::before{
-			content: '';
-			top: 0;
-			@include a-cent(x);
-			@include triangle(rem(40) rem(20), #eccdcd, down);
-		}
+		margin-bottom: rem(25);
 	}
 
 	&__item{
@@ -70,13 +36,50 @@
 			margin-right: auto;
 		}
 		padding: rem(59) rem(18) rem(26);
-		// &::before{
-		// 	content: '';
-		// 	top: 0;
-		// 	@include a-cent(x);
-		// 	@include triangle(40px 20px, $primary, down);
+		&::before{
+			content: '';
+			top: 0;
+			@include a-cent(x);
+			@include triangle(40px 20px, $primary, down);
+		}
+	}
 
-		// }
+	&__col:nth-child(1) &__item{
+		z-index: 5;
+		&::before{
+			border-top-color: #018cf1;
+		}
+	}
+	&__col:nth-child(2) &__item{
+		z-index: 4;
+		&::before{
+			border-top-color: #6dae77;
+		}
+	}
+	&__col:nth-child(3) &__item{
+		z-index: 3;
+		.sCards__text{
+			margin-bottom: 1rem;
+		}
+		&::before{
+			border-top-color: $warning;
+		}
+	}
+	&__col:nth-child(4) &__item{
+		z-index: 2;
+		&::before{
+			border-top-color: #1d4996;
+		}
+	}
+	&__col:nth-child(5) &__item{
+		z-index: 1;
+		color: #baccd9;
+		.sCards__title{
+			color: #bacdda;
+		}
+		&::before{
+			border-top-color: #eccdcd;
+		}
 	}
 
 	&__title{

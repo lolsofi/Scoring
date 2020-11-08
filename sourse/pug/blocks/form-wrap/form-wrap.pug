@@ -77,8 +77,8 @@ mixin polite()
 			+e.SMALL.text.text-secondary Согласен на обработку и хранение моих персональных данных в соответствии с условиями
 
 
-mixin form-h()
-	+form-wrap()(class="form-wrap--horizontal")
+mixin form-d()
+	+form-wrap()
 		+e.row-wrap
 			+e.row.row
 				+e.col.col-md-6
@@ -86,3 +86,9 @@ mixin form-h()
 				+e.col.col-md-6
 					+e.btn.btn.btn-danger(href="#") Отправить заявку
 		+e.text *Объем заявок в рамках «бесплатного пилота» согласовывается персонально для каждого отдельного случая.
+
+
+mixin form-l()
+	+form-wrap()(class="form-wrap--vertical")
+		+input("",'tel')
+		+e.btn.btn.btn-danger(href="#") Отправить заявку

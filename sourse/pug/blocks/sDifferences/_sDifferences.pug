@@ -4,6 +4,26 @@ mixin sDifferences()
 		.container
 			+b.section-title.text-center
 				h2 Чем &laquo;SmartDATA&raquo; отличается отконкурентов
-				
 			.row
+				.col-lg-auto
+					+e.pic-wrap
+						+pic('grafic','','')
+				+e.col.col
+					+e.row.row
+						mixin item(i,t)
+							.col.col-xl-6.col-12
+								+e.item
+									+e.img-wrap
+										img(src=`img/@2x/differences-${i}.png` loading="lazy", alt="")
+									+e.text!= t
+
+						+item(1,`Hit-Rate>90+%`)
+						+item(2,`Значительный прирост данных GINI-generic модели клиента `)
+						+item(3,`Обновление информации в реальном времени`)
+						+item(4,`Быстрая интеграция через API`)
+						+item(5,`Конкурентная стоимость`)
+						+item(6,`Бесплатное ретро-тестирование`)
+						+item(7,`Правовая гарантия сохранности данных организации`)
+						+item(8,`Полное внедрение за 1 месяц`)
+				
 	// end sDifferences

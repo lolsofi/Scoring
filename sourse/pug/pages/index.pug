@@ -6,6 +6,9 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sCards/_sCards.pug
 include ../blocks/sDifferences/_sDifferences.pug
 include ../blocks/sCredit/_sCredit.pug
+include ../blocks/sOurWork/_sOurWork.pug
+include ../blocks/sRisks/_sRisks.pug
+include ../blocks/sPartners/_sPartners.pug
 
 block variables
 	- let  mainPage= null
@@ -17,11 +20,12 @@ block pagecontent
 	//- +top-nav()
 	+topLine()
 	+headerBlock()
-
 	+sCards()
 	+sCredit()
 	+sDifferences()
-
+	+sOurWork()
+	+sRisks()
+	+sPartners()
 	+footer()
 
 

@@ -1,0 +1,58 @@
+	// start .sRisks
+.sRisks {
+		 
+	background-color: #f6f7fb;
+	--sPT: #{rem(49)};
+	--sPB: #{rem(52)};
+
+
+	&__img-wrap{
+		max-width: rem(486);
+		@include media-breakpoint-up(lg){
+			margin-bottom: 0;
+		}
+		margin-bottom: rem(25);
+		picture{
+			img{
+				border-radius: 30px;
+			}
+		}
+	}
+
+	&__text{
+		span{
+			font-weight: bold;
+		}
+	}
+
+	&__btn{
+		@extend .btn;
+		width: rem(250);
+		@include media-breakpoint-down(md){
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sRisks

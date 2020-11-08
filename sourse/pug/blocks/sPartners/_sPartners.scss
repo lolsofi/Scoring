@@ -1,0 +1,50 @@
+	// start .sPartners
+.sPartners {
+
+	--sPT: #{rem(42)};
+	--sPB: #{rem(41)};
+		 
+	h2{
+		margin-bottom: rem(35);
+	}
+	&__row{
+		align-items: center;
+	}
+
+	&__col{
+		margin-bottom: rem(49);
+		display: flex;
+		justify-content: center;
+	}
+	
+	&__img-wrap{
+		display: block;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sPartners

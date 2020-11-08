@@ -1,4 +1,13 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			.row
+				.col-auto
+					+e.logo(href="/")
+						img(src="img/@2x/logo.png", alt="")
+				.col-auto
+					+e.adress ООО «СмартДАТА»<br>115172 г.Москва,<br> Краснохолмская наб., 1/15
+				.col-auto
+					+e.tel.text-body(href="tel:+78005050873") #[span.text-danger 8 800] 505 0873
+				.col-auto
+					+e.btn.btn.btn-success(href="#") Заказать звонок
