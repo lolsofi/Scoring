@@ -17,14 +17,6 @@
 		justify-content: center;
 	}
 	
-	&__img-wrap{
-		display: block;
-		img{
-			width: 100%;
-			height: auto;
-		}
-	}
-
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
