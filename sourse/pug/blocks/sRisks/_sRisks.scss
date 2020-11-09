@@ -27,7 +27,7 @@
 
 	&__btn{
 		@extend .btn;
-		width: rem(250);
+		width: rem(250) !important;
 		@include media-breakpoint-down(md){
 			margin-right: auto;
 			margin-left: auto;
