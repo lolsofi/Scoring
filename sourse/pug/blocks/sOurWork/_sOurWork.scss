@@ -11,19 +11,20 @@
 	ol {
 		list-style-type: none; 
 		counter-reset: num;
-		@include media-breakpoint-up(xl){
-			margin-left: rem(31);
-		}
 		position: relative;
 		li {
 			position: relative;
+			@include media-breakpoint-up(lg){
+				padding-left: 38px;
+			}
+			padding-left: 3px;
 			@include media-breakpoint-up(xl){
-				margin-bottom: rem(49);
+				padding-bottom: rem(49);
 			}
 			@include media-breakpoint-up(lg){
-				margin-bottom: rem(26);
+				padding-bottom: rem(26);
 			}
-			margin-bottom: rem(20);
+			padding-bottom: rem(20);
 		}
 	}
 	ol li:before {
@@ -32,9 +33,12 @@
 		display: block;
 		position: absolute;
 		top: 0;
-		left: rem(-38);
-		width: rem(23);
-		height: rem(23);
+		@include media-breakpoint-up(lg){
+			left: 0;
+		}
+		left: -32px;
+		width: rem(22);
+		height: rem(22);
 		background: $success;
 		color: #fff;
 		text-align: center;
@@ -44,22 +48,17 @@
 		font-size: $small;
 	}
 
-	ol{
+	li:not(:last-child){
 		&::after{
 			content: '';
 			position: absolute;
 			width: rem(1);
+			height: 100%;
 			@include media-breakpoint-up(lg){
-				height: rem(569);
+				left: rem(11);
 			}
-			@include media-breakpoint-up(md){
-				height: rem(246);
-			}
-			@include media-breakpoint-up(sm){
-				height: rem(296);
-			}
-			top: rem(19);
-    	left: rem(5);
+			left: -22px;
+			top: 0;
 			background: $primary;
 			z-index: -1;
 		}
@@ -73,7 +72,10 @@
 		}
 		padding: rem(26);
 		max-width: rem(685);
-		margin-bottom: rem(57);
+		@include media-breakpoint-up(sm){
+			margin-bottom: rem(57);
+		}
+		margin-bottom: 24px;
 	}
 
 	&__form-light{
@@ -82,9 +84,8 @@
 		@include media-breakpoint-up(md){
 			padding: rem(32) rem(61) rem(33) rem(368);
 		}
-		padding: 32px 29px 33px 224px;
+		padding: 32px 20px 33px 20px;
 		max-width: rem(685);
-		z-index: -1;
 		&::before{
 			content: '';
 			position: absolute;
@@ -98,21 +99,21 @@
 				width: rem(400);
 				height: rem(300);
 			}
-			@include media-breakpoint-up(sm){
-				top: 51%;
-				left: -1%;
-				width: 36%;
-				height: 100%;
-			}
-			top: 48%;
-			left: -1%;
-			width: 36%;
-			height: 100%;
 		}
 	}
 
 	&__title{
 		margin-bottom: rem(24);
+		position: relative;
+		z-index: 3;
+		@include media-breakpoint-down(sm){
+			text-align: center;
+		}
+	}
+
+	form{
+		position: relative;
+		z-index: 3;
 	}
 
 
