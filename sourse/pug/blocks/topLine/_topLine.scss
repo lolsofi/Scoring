@@ -1,23 +1,37 @@
 	// start .topLine
 .topLine {
-
-	--sPT: #{rem(32)};
-	--sPB: #{rem(31)};
+	--sPT: #{rem(15)};
+	--sPB: #{rem(15)};
+	@include media-breakpoint-up(md) {
+	--sPT: #{rem(31)};
+	--sPB: #{rem(38)};
+	}
 
 	// &__row{
 	// 	align-items: flex-end;
 	// }
-	.row{
-		align-items: center;
-	}
+
 		 
 	&__logo{
 		display: block;
+		@include media-breakpoint-down(md) {
+			max-width: rem(120);
+		}
+	}
+
+	.row {
+		@include media-breakpoint-only(lg) {
+			@include roww(10px);
+		}
+		@include media-breakpoint-down(sm) {
+			@include roww(10px)
+		}
 	}
 
 	&__col{
 		display: flex;
 		justify-content: flex-end;
+		align-items: flex-end;
 	}
 
 	&__link{
@@ -31,35 +45,56 @@
 	&__tel{
 		font-size: rem(20);
 		font-weight: bold;
+		margin-right: rem(10);
+		@include media-breakpoint-up(xl) {
+			margin-right: rem(25);
+		}
 	}
 
 
 	&__btn{
-		@extend .btn;
+		margin-top: 2px;
+		@include media-breakpoint-down(md) {
+			width: auto;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: rem(13);
+			padding: .5rem .2rem;
+		}
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
 	@include media-breakpoint-up(xs) {}
-	
-	//
 	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
 	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {} 
 
 } // end.topLine
+
+.navMenu {
+	align-items: center;
+	margin-bottom: .3rem;
+	margin-right: rem(10);
+	@include media-breakpoint-up(xl) {
+		margin-right: rem(60);
+	}
+
+	
+
+	&__item {
+		list-style: none;
+		&:not(:last-child) {
+			margin-right: rem(10);
+			@include media-breakpoint-up(xl) {
+				margin-right: rem(49);
+			}
+		}
+	}
+
+	&__link {
+		color: $body-color;
+		@include media-breakpoint-up(lg) {
+			border-bottom: solid 1px;
+		}
+		line-height: 1;
+	}
+}
