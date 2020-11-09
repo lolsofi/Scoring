@@ -1,7 +1,7 @@
 .footer {
-    
-  // --sPT: #{rem(59)};
-  // --sPB: #{rem(17)};
+
+  padding-top: rem(23);
+  padding-bottom: rem(50);
 
   background-color: #f6f7fb;
 
@@ -12,17 +12,84 @@
   
   &__logo{
     display: block;
-    margin-right: 38px;
+    @include media-breakpoint-up(sm) {
+     margin-right: rem(15);
+    }
+    @include media-breakpoint-up(lg) {
+     margin-right: rem(38px);
+    }
+  }
+
+  &__logoWrap {
+    @include media-breakpoint-up(md) {
+     display: flex;
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+
+    }
+  }
+
+  
+  &__adress {
+    padding-top: rem(15);
+    padding-bottom: rem(25);
   }
   
   &__tel{
-		font-size: rem(20);
-		font-weight: bold;
+    font-size: rem(20);
+    font-weight: bold;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      display: block;
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__wrap {
+    @include media-breakpoint-up(md) {
+     display: flex;
+     align-items: flex-end;
+    }
+
   }
   
   &__btn{
-		@extend .btn;
-	}
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-up(md) {
+     margin-left: rem(25);
+     margin-right: 0;
+   }
+  }
+
+  
+  &__foot {
+    border-top: solid 1px #bbc1dd;
+    margin-top: rem(40);
+    @include media-breakpoint-up(md) {
+     margin-top: rem(73);
+    }
+    padding-top: rem(18);
+  }
+
+  &__polite {
+    font-size: 12px;
+    color: #aab2d5;
+    text-decoration: none !important;
+    border-bottom: solid 1px;
+    margin-bottom: rem(12);
+    display: inline-block;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  &__sm {
+    font-size: 12px;
+    color: #aab2d5;
+    line-height: 1.1;
+  }
 
 
 // 

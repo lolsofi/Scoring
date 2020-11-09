@@ -151,4 +151,11 @@ $h: em(2);
 
 		}
 	}
+
+	&__tel {
+		padding: 10px;
+		font-size: rem(20);
+		font-weight: bold;
+		margin-right: rem(10);
+	}
 }

@@ -1,13 +1,17 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			.row
-				.col-auto
-					+e.logo(href="/")
-						img(src="img/@2x/logo.png", alt="")
-				.col-auto
-					+e.adress ООО «СмартДАТА»<br>115172 г.Москва,<br> Краснохолмская наб., 1/15
-				.col-auto
-					+e.tel.text-body(href="tel:+78005050873") #[span.text-danger 8 800] 505 0873
-				.col-auto
-					+e.btn.btn.btn-success(href="#") Заказать звонок
+			.row.justify-content-between
+				.col-sm-auto
+					+e.logoWrap
+						+e.logo(href="/")
+							+pic('logo.png')
+						+e.adress ООО «СмартДАТА»<br>115172 г.Москва,<br> Краснохолмская наб., 1/15
+				.col-sm-auto
+					+e.wrap
+						+e.tel.text-body(href="tel:+78005050873") #[span.text-danger 8 800] 505 0873
+						+e.btn.btn.btn-success(href="#") Заказать звонок
+		+e.foot
+			.container
+				+e.polite(href="#") Политика конфиденциальности
+				+e.sm Информация на&nbsp;сайте предназначена только для совершеннолетних (18+). Данный интернет-сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;являетс публичной офертой, определяемой статьями 437&nbsp;ГК РФ..

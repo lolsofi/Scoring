@@ -28,20 +28,34 @@
 			<!-- start topLine-->
 			<section class="topLine section" id="topLine">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-3"><a class="topLine__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
+					<div class="row align-items-center">
+						<div class="col-auto"><a class="topLine__logo" href="/"><img class="res-i" src="img/@2x/logo.png" alt=""/></a>
 						</div>
 						<div class="topLine__col col">
-							<div class="row">
-								<div class="col-auto"><a class="topLine__link text-body" href="#">Как это работает</a>
+							<ul class="navMenu d-none d-lg-flex" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="/" itemprop="url">Как это работает</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Мой кредитный рейтинг  </a>
+								</li>
+							</ul><a class="topLine__tel text-body d-none d-md-block" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a><a class="topLine__btn btn btn-success" href="#">Заказать звонок</a>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							</div>
+							<div class="menu-mobile menu-mobile--js d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 								</div>
-								<div class="col-auto"><a class="topLine__link text-body" href="#">Мой кредитный рейтинг</a>
-								</div>
-								<div class="col-auto"><a class="topLine__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a>
-								</div>
-								<div class="col-auto"><a class="topLine__btn btn btn-success" href="#">Заказать звонок</a>
+								<div class="menu-mobile__inner">
+									<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="/" itemprop="url">Как это работает</a>
+										</li>
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Мой кредитный рейтинг  </a>
+										</li>
+									</ul><a class="menu-mobile__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a>
+									<div class="text-right"></div>
 								</div>
 							</div>
+							<!--  мобильное меню-->
 						</div>
 					</div>
 				</div>
@@ -381,16 +395,32 @@
 			<!-- end sPartners-->
 			<footer class="footer block-with-lazy">
 				<div class="container">
-					<div class="row">
-						<div class="col-auto"><a class="footer__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
-						</div>
-						<div class="col-auto">
-							<div class="footer__adress">ООО «СмартДАТА»<br>115172 г.Москва,<br> Краснохолмская наб., 1/15
+					<div class="row justify-content-between">
+						<div class="col-sm-auto">
+							<div class="footer__logoWrap"><a class="footer__logo" href="/">
+								<!-- picture-->
+								<picture> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/logo.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+										<source srcset="img/@1x/webp/logo.webp" loading="lazy" type="image/webp"/>
+										<source srcset="img/@2x/logo.png" loading="lazy" type="image/png" media="(min-width:576px)"/>
+										<source srcset="img/@1x/logo.png" loading="lazy" type="image/png"/><img src="img/@2x/logo.png" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture--></a>
+								<div class="footer__adress">ООО «СмартДАТА»<br>115172 г.Москва,<br> Краснохолмская наб., 1/15
+								</div>
 							</div>
 						</div>
-						<div class="col-auto"><a class="footer__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a>
+						<div class="col-sm-auto">
+							<div class="footer__wrap"><a class="footer__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a><a class="footer__btn btn btn-success" href="#">Заказать звонок</a>
+							</div>
 						</div>
-						<div class="col-auto"><a class="footer__btn btn btn-success" href="#">Заказать звонок</a>
+					</div>
+				</div>
+				<div class="footer__foot">
+					<div class="container"><a class="footer__polite" href="#">Политика конфиденциальности</a>
+						<div class="footer__sm">Информация на&nbsp;сайте предназначена только для совершеннолетних (18+). Данный интернет-сайт носит исключительно информационный характер и&nbsp;ни&nbsp;при каких условиях не&nbsp;являетс публичной офертой, определяемой статьями 437&nbsp;ГК РФ..
 						</div>
 					</div>
 				</div>
