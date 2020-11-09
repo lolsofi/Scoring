@@ -1,7 +1,7 @@
 	// start .sCredit
 .sCredit {
 	
-	--sPT: #{rem(10)};
+	--sPT: #{rem(6)};
 	@include media-breakpoint-up(lg){
 		--sPB: #{rem(235)};
 	}
@@ -30,6 +30,7 @@
 
 	p{
 		margin-bottom: rem(24);
+		padding-top: rem(9);
 	}
 
 	ul{
