@@ -25,7 +25,7 @@
 							<ul class="navMenu d-none d-lg-flex" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="/" itemprop="url">Как это работает</a>
 								</li>
-							</ul><a class="topLine__tel text-body d-none d-md-block" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a><a class="topLine__btn btn btn-success" href="#">Заказать звонок</a>
+							</ul><a class="topLine__tel text-body d-none d-md-block" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a><a class="topLine__btn btn btn-success link-modal" href="#modal-call">Заказать звонок</a>
 						</div>
 						<div class="col-auto d-lg-none">
 							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
@@ -154,10 +154,7 @@
 						<div class="col-lg-auto">
 							<!-- picture-->
 							<picture> 
-								<source srcset="img/@2x/webp/credit.webp" type="image/webp" media="(min-width:576px)"/>
-								<source srcset="img/@1x/webp/credit.webp" type="image/webp"/>
-								<source srcset="img/@2x/credit.jpg" type="image/jpg" media="(min-width:576px)"/>
-								<source srcset="img/@1x/credit.jpg" type="image/jpg"/><img src="img/@2x/credit.jpg" alt=""/>
+								<source srcset="img/@2x/webp/credit.webp" type="image/webp"/><img src="img/@2x/credit.jpg" alt=""/>
 							</picture>
 							<!-- /picture-->
 						</div>
@@ -327,7 +324,7 @@
 							<div class="sRisks__text">Мы&nbsp;уверены в&nbsp;эффективности сервиса &laquo;ScoringDATA&raquo; и&nbsp;гарантируем прирост GINI&mdash; generic модели.
 							</div>
 							<div class="sRisks__text mb-50">Благодаря оптимизации алгоритмов интеграции сервиса, передовому языку программирования и&nbsp;простому API, <span class="text-primary">на&nbsp;введение в&nbsp;эксплуатацию требуется менее 1&nbsp;месяца</span>. Это в&nbsp;6&nbsp;раз быстрее сторонних разработок, требующих дополнительных трудозатрат на&nbsp;внедрение и&nbsp;настройку. Обеспечиваем поддержку в&nbsp;режиме 24/7.
-							</div><a class="sRisks__btn btn btn-danger" href="#">Бесплатная консультация</a>
+							</div><a class="sRisks__btn btn btn-danger link-modal" href="#modal-feedback">Бесплатная консультация</a>
 						</div>
 					</div>
 				</div>
@@ -396,7 +393,7 @@
 							</div>
 						</div>
 						<div class="col-sm-auto">
-							<div class="footer__wrap"><a class="footer__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a><a class="footer__btn btn btn-success" href="#">Заказать звонок</a>
+							<div class="footer__wrap"><a class="footer__tel text-body" href="tel:+78005050873"><span class="text-danger">8 800</span> 505 0873</a><a class="footer__btn btn btn-success link-modal" href="#modal-call">Заказать звонок</a>
 							</div>
 						</div>
 					</div>
@@ -420,23 +417,84 @@
 					<input class="utm_medium" type="hidden" name="utm_medium"/>
 					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
 					<div class="text-center">
-						<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+						<div class="form-wrap__title form-data">Заказать звонок
 						</div>
-						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
 					</div>
-					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Введите Ваш телефон" name="tel" required="required"/>
 					</div>
 					<!-- +e.input-wrap-->
-					<button class="form-wrap__btn btn" type="submit"> 
+					<button class="form-wrap__btn btn btn-success" type="submit">Заказать звонок
 					</button>
 					<div class="form-wrap__polite">
-						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен(а) с Политикой конфиденциальности.<br>Данные используются только для обратной связи,&nbsp;не&nbsp;подлежат обработке.</small>
 						</label>
+					</div>
+					<div class="form-wrap__logo">
+						<!-- picture-->
+						<picture> 
+							<source srcset="img/@2x/webp/logo-modal.webp" type="image/webp"/><img src="img/@2x/logo-modal.jpg" alt=""/>
+						</picture>
+						<!-- /picture-->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-win modal-feedback" id="modal-feedback" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="text-center">
+						<div class="form-wrap__title form-data">Бесплатная<br>консультация
+						</div>
+					</div>
+					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="tel" placeholder="Введите Ваш телефон" name="tel" required="required"/>
+					</div>
+					<!-- +e.input-wrap-->
+					<button class="form-wrap__btn btn btn-danger" type="submit">Отправить заявку
+					</button>
+					<div class="form-wrap__polite">
+						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен(а) с Политикой конфиденциальности.<br>Данные используются только для обратной связи,&nbsp;не&nbsp;подлежат обработке.</small>
+						</label>
+					</div>
+					<div class="form-wrap__logo">
+						<!-- picture-->
+						<picture> 
+							<source srcset="img/@2x/webp/logo-modal.webp" type="image/webp"/><img src="img/@2x/logo-modal.jpg" alt=""/>
+						</picture>
+						<!-- /picture-->
 					</div>
 				</form>
 			</div>
 		</div>
 		<!-- #modal-call-->
+		<div class="modal-win" id="modal-thanks" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="text-center">
+						<div class="form-wrap__title form-data">Мы перезвоним вам в ближайшее время
+						</div>
+					</div>
+					<div class="form-wrap__logo">
+						<!-- picture-->
+						<picture> 
+							<source srcset="img/@2x/webp/logo-modal.webp" type="image/webp"/><img src="img/@2x/logo-modal.jpg" alt=""/>
+						</picture>
+						<!-- /picture-->
+					</div>
+				</form>
+			</div>
+		</div>
 		<!-- end modals-->
 		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
 		<script src="libs/jquery/jquery.min.js"></script>

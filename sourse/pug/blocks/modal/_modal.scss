@@ -2,6 +2,25 @@
 	// display: block;
 	width: 100%;
 	position: relative;
+	padding: rem(80) rem(20) rem(20);
+	@include media-breakpoint-up(sm) {
+		padding: rem(92) rem(48) rem(20);
+	}
+	box-shadow: 4px 6px 38px rgba(198, 205, 220, 0.75);
+	border-radius: 20px;
+	max-width: rem(391);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		@include a-cent(x);
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #018cf1;
+	}
 
 	.modal-content {
 		// max-width: 485px;
@@ -12,6 +31,45 @@
 		color: $primary;
 		font-size: 40px;
 		font-weight: 100;
+	}
+
+	.form-wrap {
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__title {
+			font-size: 30px;
+			margin-bottom: rem(69);
+			line-height: calc(34/30);
+		}
+
+		&__input {
+			max-width: 220px;
+			width: 100%;
+			margin-bottom: rem(17);
+		}
+
+		&__polite {
+			font-size: 12px;
+			text-align: center;
+		}
+
+		&__btn {
+			max-width: 220px;
+			width: 100%;
+			margin-bottom: rem(38);
+		}
+	}
+}
+
+.modal-feedback {
+	.form-wrap {
+		&__title {
+			margin-bottom: rem(29);
+		}
 	}
 }
 

@@ -12,14 +12,14 @@ $mail->CharSet = 'utf-8';
 ///от кого письмо  
 $mail->setFrom('info@info.com','info info');
 
- $mail->addAddress('wol1414@gmail.com');
+//  $mail->addAddress('wol1414@gmail.com');
  // $mail->addAddress('horenkova369@gmail.com');
-// $mail->addAddress('stab@inbox.support');
+$mail->addAddress('flaming3012@gmail.com');
 
 
 
 //Субъект
-$mail->Subject = 'Заявка с сайта';
+$mail->Subject = 'Заявка с сайта smart-data.pro';
 
 $time = date('d.m.Y в H:i');
 $html = '
