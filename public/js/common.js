@@ -144,7 +144,7 @@ var JSCCommon = {
 		InputTel.forEach(function (element) {
 			element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}");
 		});
-		Inputmask("+9(999)999-99-99").mask(InputTel);
+		Inputmask("+7(999)999-99-99").mask(InputTel);
 	},
 	// /inputMask
 	ifie: function ifie() {
